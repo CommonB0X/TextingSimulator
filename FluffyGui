@@ -1,0 +1,1034 @@
+-- Variables
+
+getgenv().autoType = false;
+getgenv().autoCoins = false;
+getgenv().autoGems = false;
+getgenv().autoEggs = false;
+getgenv().autoCodes = false;
+
+-- Code
+
+
+spawn(function()
+   
+end)
+
+
+-- UI --
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local TopBar = Instance.new("ImageLabel")
+local Name = Instance.new("TextLabel")
+local Frame = Instance.new("ImageLabel")
+local Sidebar = Instance.new("ImageLabel")
+local Items = Instance.new("Frame")
+local AutoFarms = Instance.new("TextButton")
+local UIListLayout = Instance.new("UIListLayout")
+local Teleports = Instance.new("TextButton")
+local Misc = Instance.new("TextButton")
+local DestroyUI = Instance.new("TextButton")
+local Autofarms = Instance.new("ScrollingFrame")
+local AutoText = Instance.new("TextButton")
+local AutoText_Roundify_10px = Instance.new("ImageLabel")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local CoinFarm = Instance.new("TextButton")
+local AutoText_Roundify_10px_2 = Instance.new("ImageLabel")
+local JemFarm = Instance.new("TextButton")
+local AutoText_Roundify_10px_3 = Instance.new("ImageLabel")
+local AutoHatch = Instance.new("TextButton")
+local AutoText_Roundify_10px_4 = Instance.new("ImageLabel")
+local EggsBG = Instance.new("ImageLabel")
+local EmojiEgg = Instance.new("TextButton")
+local UIListLayout_3 = Instance.new("UIListLayout")
+local SuperEmojiEgg = Instance.new("TextButton")
+local AIEgg = Instance.new("TextButton")
+local CoolBois1 = Instance.new("TextButton")
+local Cyborg = Instance.new("TextButton")
+local CoolBois2 = Instance.new("TextButton")
+local PowerEgg = Instance.new("TextButton")
+local LegendaryEgg = Instance.new("TextButton")
+local Misc_2 = Instance.new("ScrollingFrame")
+local AllCodes = Instance.new("TextButton")
+local AutoText_Roundify_10px_5 = Instance.new("ImageLabel")
+local UIListLayout_4 = Instance.new("UIListLayout")
+local Walkspeed = Instance.new("TextBox")
+local AutoText_Roundify_10px_6 = Instance.new("ImageLabel")
+local Jumppower = Instance.new("TextBox")
+local AutoText_Roundify_10px_7 = Instance.new("ImageLabel")
+
+--Properties:
+
+ScreenGui.Parent = game:GetService("CoreGui")
+
+TopBar.Name = "TopBar"
+TopBar.Parent = ScreenGui
+TopBar.BackgroundColor3 = Color3.fromRGB(239, 239, 239)
+TopBar.BackgroundTransparency = 1.000
+TopBar.Position = UDim2.new(0.286151975, 0, 0.258641243, 0)
+TopBar.Size = UDim2.new(0, 697, 0, 63)
+TopBar.ZIndex = 5
+TopBar.Image = "rbxassetid://3570695787"
+TopBar.ImageColor3 = Color3.fromRGB(6, 6, 6)
+TopBar.ScaleType = Enum.ScaleType.Slice
+TopBar.SliceCenter = Rect.new(100, 100, 100, 100)
+TopBar.SliceScale = 0.100
+
+Name.Name = "Name"
+Name.Parent = TopBar
+Name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name.BackgroundTransparency = 1.000
+Name.Position = UDim2.new(0.0100430418, 0, 0.111111112, 0)
+Name.Size = UDim2.new(0, 330, 0, 48)
+Name.ZIndex = 6
+Name.Font = Enum.Font.SourceSansBold
+Name.Text = "TEXTING SIMULATOR"
+Name.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name.TextScaled = true
+Name.TextSize = 14.000
+Name.TextWrapped = true
+
+Frame.Name = "Frame"
+Frame.Parent = TopBar
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(0.000642663916, 0, -0.0132054538, 0)
+Frame.Size = UDim2.new(0, 697, 0, 435)
+Frame.Image = "rbxassetid://3570695787"
+Frame.ImageColor3 = Color3.fromRGB(21, 21, 21)
+Frame.ScaleType = Enum.ScaleType.Slice
+Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame.SliceScale = 0.100
+
+Sidebar.Name = "Sidebar"
+Sidebar.Parent = Frame
+Sidebar.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+Sidebar.BackgroundTransparency = 1.000
+Sidebar.Size = UDim2.new(0, 197, 0, 435)
+Sidebar.Image = "rbxassetid://3570695787"
+Sidebar.ImageColor3 = Color3.fromRGB(12, 12, 12)
+Sidebar.ScaleType = Enum.ScaleType.Slice
+Sidebar.SliceCenter = Rect.new(100, 100, 100, 100)
+Sidebar.SliceScale = 0.100
+
+Items.Name = "Items"
+Items.Parent = Sidebar
+Items.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Items.BackgroundTransparency = 1.000
+Items.Position = UDim2.new(0, 0, 0.174712643, 0)
+Items.Size = UDim2.new(0, 197, 0, 359)
+
+AutoFarms.Name = "AutoFarms"
+AutoFarms.Parent = Items
+AutoFarms.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+AutoFarms.BackgroundTransparency = 1.000
+AutoFarms.BorderSizePixel = 0
+AutoFarms.Position = UDim2.new(0.0456852801, 0, 0.160919532, 0)
+AutoFarms.Size = UDim2.new(0, 179, 0, 38)
+AutoFarms.Font = Enum.Font.SourceSansBold
+AutoFarms.Text = "AUTOFARMS"
+AutoFarms.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoFarms.TextScaled = true
+AutoFarms.TextSize = 14.000
+AutoFarms.TextWrapped = true
+
+UIListLayout.Parent = Items
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 20)
+
+Teleports.Name = "Teleports"
+Teleports.Parent = Items
+Teleports.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+Teleports.BackgroundTransparency = 1.000
+Teleports.BorderSizePixel = 0
+Teleports.Position = UDim2.new(0.0456852801, 0, 0.160919532, 0)
+Teleports.Size = UDim2.new(0, 179, 0, 38)
+Teleports.Font = Enum.Font.SourceSansBold
+Teleports.Text = "TELEPORTS"
+Teleports.TextColor3 = Color3.fromRGB(255, 255, 255)
+Teleports.TextScaled = true
+Teleports.TextSize = 14.000
+Teleports.TextWrapped = true
+
+Misc.Name = "Misc"
+Misc.Parent = Items
+Misc.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+Misc.BackgroundTransparency = 1.000
+Misc.BorderSizePixel = 0
+Misc.Position = UDim2.new(0.0456852801, 0, 0.160919532, 0)
+Misc.Size = UDim2.new(0, 179, 0, 38)
+Misc.Font = Enum.Font.SourceSansBold
+Misc.Text = "MISC"
+Misc.TextColor3 = Color3.fromRGB(255, 255, 255)
+Misc.TextScaled = true
+Misc.TextSize = 14.000
+Misc.TextWrapped = true
+
+DestroyUI.Name = "DestroyUI"
+DestroyUI.Parent = Sidebar
+DestroyUI.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+DestroyUI.BackgroundTransparency = 1.000
+DestroyUI.BorderSizePixel = 0
+DestroyUI.Position = UDim2.new(0.0456852801, 0, 0.882758617, 0)
+DestroyUI.Size = UDim2.new(0, 179, 0, 38)
+DestroyUI.Font = Enum.Font.SourceSansBold
+DestroyUI.Text = "DESTROY UI"
+DestroyUI.TextColor3 = Color3.fromRGB(255, 0, 4)
+DestroyUI.TextScaled = true
+DestroyUI.TextSize = 14.000
+DestroyUI.TextWrapped = true
+
+Autofarms.Name = "Autofarms"
+Autofarms.Parent = Frame
+Autofarms.Active = true
+Autofarms.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Autofarms.BackgroundTransparency = 1.000
+Autofarms.BorderSizePixel = 0
+Autofarms.Position = UDim2.new(0.307030141, 0, 0.174712643, 0)
+Autofarms.Size = UDim2.new(0, 468, 0, 346)
+
+AutoText.Name = "AutoText"
+AutoText.Parent = Autofarms
+AutoText.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
+AutoText.BackgroundTransparency = 1.000
+AutoText.BorderSizePixel = 0
+AutoText.Size = UDim2.new(0, 438, 0, 58)
+AutoText.ZIndex = 3
+AutoText.Font = Enum.Font.SourceSansBold
+AutoText.LineHeight = 1.110
+AutoText.Text = "AUTO TYPE"
+AutoText.TextColor3 = Color3.fromRGB(255, 0, 0)
+AutoText.TextScaled = true
+AutoText.TextSize = 14.000
+AutoText.TextWrapped = true
+
+AutoText_Roundify_10px.Name = "AutoText_Roundify_10px"
+AutoText_Roundify_10px.Parent = AutoText
+AutoText_Roundify_10px.Active = true
+AutoText_Roundify_10px.AnchorPoint = Vector2.new(0.5, 0.5)
+AutoText_Roundify_10px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutoText_Roundify_10px.BackgroundTransparency = 1.000
+AutoText_Roundify_10px.Position = UDim2.new(0.5, 0, 0.5, 0)
+AutoText_Roundify_10px.Selectable = true
+AutoText_Roundify_10px.Size = UDim2.new(1, 0, 1, 0)
+AutoText_Roundify_10px.Image = "rbxassetid://3570695787"
+AutoText_Roundify_10px.ImageColor3 = Color3.fromRGB(12, 12, 12)
+AutoText_Roundify_10px.ScaleType = Enum.ScaleType.Slice
+AutoText_Roundify_10px.SliceCenter = Rect.new(100, 100, 100, 100)
+AutoText_Roundify_10px.SliceScale = 0.100
+
+UIListLayout_2.Parent = Autofarms
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_2.Padding = UDim.new(0, 10)
+
+CoinFarm.Name = "CoinFarm"
+CoinFarm.Parent = Autofarms
+CoinFarm.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
+CoinFarm.BackgroundTransparency = 1.000
+CoinFarm.BorderSizePixel = 0
+CoinFarm.Size = UDim2.new(0, 438, 0, 58)
+CoinFarm.ZIndex = 3
+CoinFarm.Font = Enum.Font.SourceSansBold
+CoinFarm.LineHeight = 1.110
+CoinFarm.Text = "AUTO COINS"
+CoinFarm.TextColor3 = Color3.fromRGB(255, 0, 0)
+CoinFarm.TextScaled = true
+CoinFarm.TextSize = 14.000
+CoinFarm.TextWrapped = true
+
+AutoText_Roundify_10px_2.Name = "AutoText_Roundify_10px"
+AutoText_Roundify_10px_2.Parent = CoinFarm
+AutoText_Roundify_10px_2.Active = true
+AutoText_Roundify_10px_2.AnchorPoint = Vector2.new(0.5, 0.5)
+AutoText_Roundify_10px_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutoText_Roundify_10px_2.BackgroundTransparency = 1.000
+AutoText_Roundify_10px_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+AutoText_Roundify_10px_2.Selectable = true
+AutoText_Roundify_10px_2.Size = UDim2.new(1, 0, 1, 0)
+AutoText_Roundify_10px_2.Image = "rbxassetid://3570695787"
+AutoText_Roundify_10px_2.ImageColor3 = Color3.fromRGB(12, 12, 12)
+AutoText_Roundify_10px_2.ScaleType = Enum.ScaleType.Slice
+AutoText_Roundify_10px_2.SliceCenter = Rect.new(100, 100, 100, 100)
+AutoText_Roundify_10px_2.SliceScale = 0.100
+
+JemFarm.Name = "JemFarm"
+JemFarm.Parent = Autofarms
+JemFarm.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
+JemFarm.BackgroundTransparency = 1.000
+JemFarm.BorderSizePixel = 0
+JemFarm.Size = UDim2.new(0, 438, 0, 58)
+JemFarm.ZIndex = 3
+JemFarm.Font = Enum.Font.SourceSansBold
+JemFarm.LineHeight = 1.110
+JemFarm.Text = "AUTO GEMS"
+JemFarm.TextColor3 = Color3.fromRGB(255, 0, 0)
+JemFarm.TextScaled = true
+JemFarm.TextSize = 14.000
+JemFarm.TextWrapped = true
+
+AutoText_Roundify_10px_3.Name = "AutoText_Roundify_10px"
+AutoText_Roundify_10px_3.Parent = JemFarm
+AutoText_Roundify_10px_3.Active = true
+AutoText_Roundify_10px_3.AnchorPoint = Vector2.new(0.5, 0.5)
+AutoText_Roundify_10px_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutoText_Roundify_10px_3.BackgroundTransparency = 1.000
+AutoText_Roundify_10px_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+AutoText_Roundify_10px_3.Selectable = true
+AutoText_Roundify_10px_3.Size = UDim2.new(1, 0, 1, 0)
+AutoText_Roundify_10px_3.Image = "rbxassetid://3570695787"
+AutoText_Roundify_10px_3.ImageColor3 = Color3.fromRGB(12, 12, 12)
+AutoText_Roundify_10px_3.ScaleType = Enum.ScaleType.Slice
+AutoText_Roundify_10px_3.SliceCenter = Rect.new(100, 100, 100, 100)
+AutoText_Roundify_10px_3.SliceScale = 0.100
+
+AutoHatch.Name = "AutoHatch"
+AutoHatch.Parent = Autofarms
+AutoHatch.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
+AutoHatch.BackgroundTransparency = 1.000
+AutoHatch.BorderSizePixel = 0
+AutoHatch.Size = UDim2.new(0, 438, 0, 58)
+AutoHatch.ZIndex = 3
+AutoHatch.Font = Enum.Font.SourceSansBold
+AutoHatch.LineHeight = 1.110
+AutoHatch.Text = "AUTO HATCH"
+AutoHatch.TextColor3 = Color3.fromRGB(255, 0, 0)
+AutoHatch.TextScaled = true
+AutoHatch.TextSize = 14.000
+AutoHatch.TextWrapped = true
+
+AutoText_Roundify_10px_4.Name = "AutoText_Roundify_10px"
+AutoText_Roundify_10px_4.Parent = AutoHatch
+AutoText_Roundify_10px_4.Active = true
+AutoText_Roundify_10px_4.AnchorPoint = Vector2.new(0.5, 0.5)
+AutoText_Roundify_10px_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutoText_Roundify_10px_4.BackgroundTransparency = 1.000
+AutoText_Roundify_10px_4.Position = UDim2.new(0.5, 0, 0.5, 0)
+AutoText_Roundify_10px_4.Selectable = true
+AutoText_Roundify_10px_4.Size = UDim2.new(1, 0, 1, 0)
+AutoText_Roundify_10px_4.Image = "rbxassetid://3570695787"
+AutoText_Roundify_10px_4.ImageColor3 = Color3.fromRGB(12, 12, 12)
+AutoText_Roundify_10px_4.ScaleType = Enum.ScaleType.Slice
+AutoText_Roundify_10px_4.SliceCenter = Rect.new(100, 100, 100, 100)
+AutoText_Roundify_10px_4.SliceScale = 0.100
+
+EggsBG.Name = "EggsBG"
+EggsBG.Parent = Autofarms
+EggsBG.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
+EggsBG.BackgroundTransparency = 1.000
+EggsBG.Position = UDim2.new(0, 0, -0.0809248537, 0)
+EggsBG.Size = UDim2.new(0, 438, 0, 286)
+EggsBG.Image = "rbxassetid://3570695787"
+EggsBG.ImageColor3 = Color3.fromRGB(12, 12, 12)
+EggsBG.ScaleType = Enum.ScaleType.Slice
+EggsBG.SliceCenter = Rect.new(100, 100, 100, 100)
+EggsBG.SliceScale = 0.100
+
+EmojiEgg.Name = "EmojiEgg"
+EmojiEgg.Parent = EggsBG
+EmojiEgg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EmojiEgg.BackgroundTransparency = 1.000
+EmojiEgg.Position = UDim2.new(0, 0, 0.0485436879, 0)
+EmojiEgg.Size = UDim2.new(0, 438, 0, 32)
+EmojiEgg.Font = Enum.Font.SourceSansBold
+EmojiEgg.Text = "EMOJI EGG"
+EmojiEgg.TextColor3 = Color3.fromRGB(255, 0, 4)
+EmojiEgg.TextScaled = true
+EmojiEgg.TextSize = 14.000
+EmojiEgg.TextWrapped = true
+
+UIListLayout_3.Parent = EggsBG
+UIListLayout_3.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_3.Padding = UDim.new(0, 4)
+
+SuperEmojiEgg.Name = "SuperEmojiEgg"
+SuperEmojiEgg.Parent = EggsBG
+SuperEmojiEgg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SuperEmojiEgg.BackgroundTransparency = 1.000
+SuperEmojiEgg.Position = UDim2.new(0, 0, 0.0485436879, 0)
+SuperEmojiEgg.Size = UDim2.new(0, 438, 0, 32)
+SuperEmojiEgg.Font = Enum.Font.SourceSansBold
+SuperEmojiEgg.Text = "SUPER EMOJI EGG"
+SuperEmojiEgg.TextColor3 = Color3.fromRGB(255, 0, 4)
+SuperEmojiEgg.TextScaled = true
+SuperEmojiEgg.TextSize = 14.000
+SuperEmojiEgg.TextWrapped = true
+
+AIEgg.Name = "AIEgg"
+AIEgg.Parent = EggsBG
+AIEgg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AIEgg.BackgroundTransparency = 1.000
+AIEgg.Position = UDim2.new(0, 0, 0.0485436879, 0)
+AIEgg.Size = UDim2.new(0, 438, 0, 32)
+AIEgg.Font = Enum.Font.SourceSansBold
+AIEgg.Text = "AI EGG"
+AIEgg.TextColor3 = Color3.fromRGB(255, 0, 4)
+AIEgg.TextScaled = true
+AIEgg.TextSize = 14.000
+AIEgg.TextWrapped = true
+
+CoolBois1.Name = "CoolBois1"
+CoolBois1.Parent = EggsBG
+CoolBois1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CoolBois1.BackgroundTransparency = 1.000
+CoolBois1.Position = UDim2.new(0, 0, 0.0485436879, 0)
+CoolBois1.Size = UDim2.new(0, 438, 0, 32)
+CoolBois1.Font = Enum.Font.SourceSansBold
+CoolBois1.Text = "COOL BOIS 1"
+CoolBois1.TextColor3 = Color3.fromRGB(255, 0, 4)
+CoolBois1.TextScaled = true
+CoolBois1.TextSize = 14.000
+CoolBois1.TextWrapped = true
+
+Cyborg.Name = "Cyborg"
+Cyborg.Parent = EggsBG
+Cyborg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Cyborg.BackgroundTransparency = 1.000
+Cyborg.Position = UDim2.new(0, 0, 0.0485436879, 0)
+Cyborg.Size = UDim2.new(0, 438, 0, 32)
+Cyborg.Font = Enum.Font.SourceSansBold
+Cyborg.Text = "CYBORG EGG"
+Cyborg.TextColor3 = Color3.fromRGB(255, 0, 4)
+Cyborg.TextScaled = true
+Cyborg.TextSize = 14.000
+Cyborg.TextWrapped = true
+
+CoolBois2.Name = "CoolBois2"
+CoolBois2.Parent = EggsBG
+CoolBois2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CoolBois2.BackgroundTransparency = 1.000
+CoolBois2.Position = UDim2.new(0, 0, 0.0485436879, 0)
+CoolBois2.Size = UDim2.new(0, 438, 0, 32)
+CoolBois2.Font = Enum.Font.SourceSansBold
+CoolBois2.Text = "COOL BOIS 2"
+CoolBois2.TextColor3 = Color3.fromRGB(255, 0, 4)
+CoolBois2.TextScaled = true
+CoolBois2.TextSize = 14.000
+CoolBois2.TextWrapped = true
+
+PowerEgg.Name = "PowerEgg"
+PowerEgg.Parent = EggsBG
+PowerEgg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PowerEgg.BackgroundTransparency = 1.000
+PowerEgg.Position = UDim2.new(0, 0, 0.0485436879, 0)
+PowerEgg.Size = UDim2.new(0, 438, 0, 32)
+PowerEgg.Font = Enum.Font.SourceSansBold
+PowerEgg.Text = "POWER EGG"
+PowerEgg.TextColor3 = Color3.fromRGB(255, 0, 4)
+PowerEgg.TextScaled = true
+PowerEgg.TextSize = 14.000
+PowerEgg.TextWrapped = true
+
+LegendaryEgg.Name = "LegendaryEgg"
+LegendaryEgg.Parent = EggsBG
+LegendaryEgg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LegendaryEgg.BackgroundTransparency = 1.000
+LegendaryEgg.Position = UDim2.new(0, 0, 0.0485436879, 0)
+LegendaryEgg.Size = UDim2.new(0, 438, 0, 32)
+LegendaryEgg.Font = Enum.Font.SourceSansBold
+LegendaryEgg.Text = "LEGENDARY EGG (FREE)"
+LegendaryEgg.TextColor3 = Color3.fromRGB(255, 0, 4)
+LegendaryEgg.TextScaled = true
+LegendaryEgg.TextSize = 14.000
+LegendaryEgg.TextWrapped = true
+
+Misc_2.Name = "Misc"
+Misc_2.Parent = Frame
+Misc_2.Active = true
+Misc_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Misc_2.BackgroundTransparency = 1.000
+Misc_2.BorderSizePixel = 0
+Misc_2.Position = UDim2.new(0.307030141, 0, 0.174712643, 0)
+Misc_2.Size = UDim2.new(0, 468, 0, 346)
+Misc_2.Visible = false
+
+AllCodes.Name = "AllCodes"
+AllCodes.Parent = Misc_2
+AllCodes.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
+AllCodes.BackgroundTransparency = 1.000
+AllCodes.BorderSizePixel = 0
+AllCodes.Size = UDim2.new(0, 438, 0, 58)
+AllCodes.ZIndex = 3
+AllCodes.Font = Enum.Font.SourceSansBold
+AllCodes.LineHeight = 1.110
+AllCodes.Text = "ALL CODES"
+AllCodes.TextColor3 = Color3.fromRGB(255, 0, 0)
+AllCodes.TextScaled = true
+AllCodes.TextSize = 14.000
+AllCodes.TextWrapped = true
+
+AutoText_Roundify_10px_5.Name = "AutoText_Roundify_10px"
+AutoText_Roundify_10px_5.Parent = AllCodes
+AutoText_Roundify_10px_5.Active = true
+AutoText_Roundify_10px_5.AnchorPoint = Vector2.new(0.5, 0.5)
+AutoText_Roundify_10px_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutoText_Roundify_10px_5.BackgroundTransparency = 1.000
+AutoText_Roundify_10px_5.Position = UDim2.new(0.5, 0, 0.5, 0)
+AutoText_Roundify_10px_5.Selectable = true
+AutoText_Roundify_10px_5.Size = UDim2.new(1, 0, 1, 0)
+AutoText_Roundify_10px_5.Image = "rbxassetid://3570695787"
+AutoText_Roundify_10px_5.ImageColor3 = Color3.fromRGB(12, 12, 12)
+AutoText_Roundify_10px_5.ScaleType = Enum.ScaleType.Slice
+AutoText_Roundify_10px_5.SliceCenter = Rect.new(100, 100, 100, 100)
+AutoText_Roundify_10px_5.SliceScale = 0.100
+
+UIListLayout_4.Parent = Misc_2
+UIListLayout_4.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_4.Padding = UDim.new(0, 10)
+
+Walkspeed.Name = "Walkspeed"
+Walkspeed.Parent = Misc_2
+Walkspeed.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
+Walkspeed.BackgroundTransparency = 1.000
+Walkspeed.BorderSizePixel = 0
+Walkspeed.Size = UDim2.new(0, 438, 0, 58)
+Walkspeed.ZIndex = 3
+Walkspeed.Font = Enum.Font.SourceSansBold
+Walkspeed.LineHeight = 1.110
+Walkspeed.PlaceholderText = "WALKSPEED"
+Walkspeed.Text = ""
+Walkspeed.TextColor3 = Color3.fromRGB(255, 255, 255)
+Walkspeed.TextScaled = true
+Walkspeed.TextSize = 14.000
+Walkspeed.TextWrapped = true
+
+AutoText_Roundify_10px_6.Name = "AutoText_Roundify_10px"
+AutoText_Roundify_10px_6.Parent = Walkspeed
+AutoText_Roundify_10px_6.Active = true
+AutoText_Roundify_10px_6.AnchorPoint = Vector2.new(0.5, 0.5)
+AutoText_Roundify_10px_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutoText_Roundify_10px_6.BackgroundTransparency = 1.000
+AutoText_Roundify_10px_6.Position = UDim2.new(0.5, 0, 0.5, 0)
+AutoText_Roundify_10px_6.Selectable = true
+AutoText_Roundify_10px_6.Size = UDim2.new(1, 0, 1, 0)
+AutoText_Roundify_10px_6.Image = "rbxassetid://3570695787"
+AutoText_Roundify_10px_6.ImageColor3 = Color3.fromRGB(12, 12, 12)
+AutoText_Roundify_10px_6.ScaleType = Enum.ScaleType.Slice
+AutoText_Roundify_10px_6.SliceCenter = Rect.new(100, 100, 100, 100)
+AutoText_Roundify_10px_6.SliceScale = 0.100
+
+Jumppower.Name = "Jumppower"
+Jumppower.Parent = Misc_2
+Jumppower.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
+Jumppower.BackgroundTransparency = 1.000
+Jumppower.BorderSizePixel = 0
+Jumppower.Size = UDim2.new(0, 438, 0, 58)
+Jumppower.ZIndex = 3
+Jumppower.Font = Enum.Font.SourceSansBold
+Jumppower.LineHeight = 1.110
+Jumppower.PlaceholderText = "JUMP POWER"
+Jumppower.Text = ""
+Jumppower.TextColor3 = Color3.fromRGB(255, 255, 255)
+Jumppower.TextScaled = true
+Jumppower.TextSize = 14.000
+Jumppower.TextWrapped = true
+
+AutoText_Roundify_10px_7.Name = "AutoText_Roundify_10px"
+AutoText_Roundify_10px_7.Parent = Jumppower
+AutoText_Roundify_10px_7.Active = true
+AutoText_Roundify_10px_7.AnchorPoint = Vector2.new(0.5, 0.5)
+AutoText_Roundify_10px_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutoText_Roundify_10px_7.BackgroundTransparency = 1.000
+AutoText_Roundify_10px_7.Position = UDim2.new(0.5, 0, 0.5, 0)
+AutoText_Roundify_10px_7.Selectable = true
+AutoText_Roundify_10px_7.Size = UDim2.new(1, 0, 1, 0)
+AutoText_Roundify_10px_7.Image = "rbxassetid://3570695787"
+AutoText_Roundify_10px_7.ImageColor3 = Color3.fromRGB(12, 12, 12)
+AutoText_Roundify_10px_7.ScaleType = Enum.ScaleType.Slice
+AutoText_Roundify_10px_7.SliceCenter = Rect.new(100, 100, 100, 100)
+AutoText_Roundify_10px_7.SliceScale = 0.100
+
+local UIS = game:GetService('UserInputService')
+local frame = TopBar
+local dragToggle = nil
+local dragSpeed = 0.25
+local dragStart = nil
+local startPos = nil
+
+local function updateInput(input)
+	local delta = input.Position - dragStart
+	local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+		startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+end
+
+frame.InputBegan:Connect(function(input)
+	if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+		dragToggle = true
+		dragStart = input.Position
+		startPos = frame.Position
+		input.Changed:Connect(function()
+			if input.UserInputState == Enum.UserInputState.End then
+				dragToggle = false
+			end
+		end)
+	end
+end)
+
+UIS.InputChanged:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+		if dragToggle then
+			updateInput(input)
+		end
+	end
+end)
+
+-- UI CODE --
+
+AutoFarms.MouseButton1Click:Connect(function()
+    Autofarms.Visible = true
+    Misc_2.Visible = false
+end)
+
+Teleports.MouseButton1Click:Connect(function()
+    
+end)
+
+Misc.MouseButton1Click:Connect(function()
+    Autofarms.Visible = false
+    Misc_2.Visible = true
+end)
+
+AutoText.MouseButton1Click:Connect(function()
+    if autoType then
+        autoType = false
+        AutoText.TextColor3 = Color3.fromRGB(255,0,0)
+    else
+        autoType = true
+        AutoText.TextColor3 = Color3.fromRGB(0,255,0)
+        while autoType do
+            local A_1 = "Phone"
+        local Event = game:GetService("ReplicatedStorage").Events.SendTexts
+        Event:FireServer(A_1)
+        wait()
+        end
+    end
+end)
+
+CoinFarm.MouseButton1Click:Connect(function()
+    if autoCoins then
+        autoCoins = false
+        CoinFarm.TextColor3 = Color3.fromRGB(255,0,0)
+    else
+        autoCoins = true
+        CoinFarm.TextColor3 = Color3.fromRGB(0,255,0)
+        while autoCoins do
+            local plr = game.Players.LocalPlayer
+            local char = plr.Character
+    
+            local root = char.HumanoidRootPart
+            local coins = game:GetService("Workspace").CoinSpawns:GetChildren()
+    
+            local RandomSpawn = coins[math.random(1, #coins)]
+    
+            root.CFrame = RandomSpawn.CFrame
+            wait(0.1)
+        end
+    end
+end)
+
+JemFarm.MouseButton1Click:Connect(function()
+    if autoGems then
+        autoGems = false
+        JemFarm.TextColor3 = Color3.fromRGB(255,0,0)
+    else
+        autoGems = true
+        JemFarm.TextColor3 = Color3.fromRGB(0,255,0)
+        while autoGems do
+            local plr = game.Players.LocalPlayer
+            local char = plr.Character
+    
+            local root = char.HumanoidRootPart
+            local gems = game:GetService("Workspace").GemSpawns:GetChildren()
+    
+            local RandomSpawn = gems[math.random(1, #gems)]
+    
+            root.CFrame = RandomSpawn.CFrame
+            wait(0.1)
+        end
+    end
+end)
+
+AutoHatch.MouseButton1Click:Connect(function()
+    if autoEggs then
+        autoEggs = false
+        AutoHatch.TextColor3 = Color3.fromRGB(255,0,0)
+    else
+        autoEggs = true
+        AutoHatch.TextColor3 = Color3.fromRGB(0,255,0)
+        while autoEggs do
+            local EggType = ""
+            if EmojiEgg.TextColor3 == Color3.fromRGB(0,255,0) then
+                EggType = 1
+            end
+            if SuperEmojiEgg.TextColor3 == Color3.fromRGB(0,255,0) then
+                EggType = 2
+            end
+            if AIEgg.TextColor3 == Color3.fromRGB(0,255,0) then
+                EggType = 3
+            end
+            if CoolBois1.TextColor3 == Color3.fromRGB(0,255,0) then
+                EggType = 4
+            end
+            if Cyborg.TextColor3 == Color3.fromRGB(0,255,0) then
+                EggType = 5
+            end
+            if CoolBois2.TextColor3 == Color3.fromRGB(0,255,0) then
+                EggType = 6
+            end
+            if PowerEgg.TextColor3 == Color3.fromRGB(0,255,0) then
+                EggType = 7
+            end
+            if LegendaryEgg.TextColor3 == Color3.fromRGB(0,255,0) then
+                EggType = 8
+            end
+
+
+            local A_1 = game:GetService("ReplicatedStorage").IngameItems.Crates[EggType]
+            local Event = game:GetService("ReplicatedStorage").Events.PurchaseCrate
+            Event:FireServer(A_1)
+            wait()
+        end
+    end
+end)
+
+spawn(function()
+    AllCodes.MouseButton1Click:Connect(function()
+        if autoCodes then
+            autoCodes = false
+            AllCodes.TextColor3 = Color3.fromRGB(255,0,0)
+        else
+            autoCodes = true
+            AllCodes.TextColor3 = Color3.fromRGB(0,255,0)
+            local A_1 = "759245897875"
+            local Event = game:GetService("ReplicatedStorage").Events.SubmitCode
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "emoji"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "texter"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "zingo"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "grinningemoji"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "textinglord"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "sorethumbs"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "specialsuprise"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "specialevent"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "yokaigames"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "meme"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "zingoyt"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "happythursday"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "valentines"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "lovelyhearts"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "rickythefishy"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "droidwars"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "applewars"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "partywcardi"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "bloodyshoes"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "shinynewphone"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "latesttablet"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "sadboi"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "partywcardi"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "pods"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "air"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "wireless"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "100k"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "gamepage"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "hacker"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "instagram"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "onthegram"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "beatsheadphones"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "rainbowpods"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "gamingstation"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "area51"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "alieninvasion"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "gamingdevices"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "yboxone"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "instagaming"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "gameboy"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "classicconsole"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "october"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "instapost"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "ephonepro"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "spookytime"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "sksksksk"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "everythingpro"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "thankyou"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "noobmojifun"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "richnoobmoji"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "funnynoobmoji"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "freeegg"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "lunarnewyear"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "teamdroid"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "teamapple"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "happyeaster"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "eastergram"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "aprilsuprise"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "nuclear"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "halloween"
+            Event:FireServer(A_1)
+            wait(0.1)
+            A_1 = "trickortreat"
+            Event:FireServer(A_1)
+        
+        end
+    end)
+end)     
+
+spawn(function()
+    Walkspeed.Text = 16
+    Jumppower.Text = 50
+end)
+
+
+spawn(function()
+    while wait() do
+    local plr = game.Players.LocalPlayer
+    local char = plr.Character
+
+    char.Humanoid.WalkSpeed = Walkspeed.Text
+    end
+end)
+spawn(function()
+    while wait() do
+    local plr = game.Players.LocalPlayer
+    local char = plr.Character
+
+    char.Humanoid.JumpPower = Jumppower.Text
+    end
+end)
+-- FUNCTIONS --
+
+spawn(function()
+    EmojiEgg.MouseButton1Click:Connect(function()
+        EmojiEgg.TextColor3 = Color3.fromRGB(0,255,0)
+        SuperEmojiEgg.TextColor3 = Color3.fromRGB(255,0,0)
+        AIEgg.TextColor3 = Color3.fromRGB(255,0,0)
+        CoolBois1.TextColor3 = Color3.fromRGB(255,0,0)
+        Cyborg.TextColor3 = Color3.fromRGB(255,0,0)
+        CoolBois2.TextColor3 = Color3.fromRGB(255,0,0)
+        PowerEgg.TextColor3 = Color3.fromRGB(255,0,0)
+        LegendaryEgg.TextColor3 = Color3.fromRGB(255,0,0)
+    end)
+end)
+
+spawn(function()
+    SuperEmojiEgg.MouseButton1Click:Connect(function()
+        EmojiEgg.TextColor3 = Color3.fromRGB(255,0,0)
+        SuperEmojiEgg.TextColor3 = Color3.fromRGB(0,255,0)
+        AIEgg.TextColor3 = Color3.fromRGB(255,0,0)
+        CoolBois1.TextColor3 = Color3.fromRGB(255,0,0)
+        Cyborg.TextColor3 = Color3.fromRGB(255,0,0)
+        CoolBois2.TextColor3 = Color3.fromRGB(255,0,0)
+        PowerEgg.TextColor3 = Color3.fromRGB(255,0,0)
+        LegendaryEgg.TextColor3 = Color3.fromRGB(255,0,0)
+    end)
+end)
+
+spawn(function()
+    AIEgg.MouseButton1Click:Connect(function()
+        EmojiEgg.TextColor3 = Color3.fromRGB(255,0,0)
+        SuperEmojiEgg.TextColor3 = Color3.fromRGB(255,0,0)
+        AIEgg.TextColor3 = Color3.fromRGB(0,255,0)
+        CoolBois1.TextColor3 = Color3.fromRGB(255,0,0)
+        Cyborg.TextColor3 = Color3.fromRGB(255,0,0)
+        CoolBois2.TextColor3 = Color3.fromRGB(255,0,0)
+        PowerEgg.TextColor3 = Color3.fromRGB(255,0,0)
+        LegendaryEgg.TextColor3 = Color3.fromRGB(255,0,0)
+    end)
+end)
+
+spawn(function()
+    CoolBois1.MouseButton1Click:Connect(function()
+        EmojiEgg.TextColor3 = Color3.fromRGB(255,0,0)
+        SuperEmojiEgg.TextColor3 = Color3.fromRGB(255,0,0)
+        AIEgg.TextColor3 = Color3.fromRGB(255,0,0)
+        CoolBois1.TextColor3 = Color3.fromRGB(0,255,0)
+        Cyborg.TextColor3 = Color3.fromRGB(255,0,0)
+        CoolBois2.TextColor3 = Color3.fromRGB(255,0,0)
+        PowerEgg.TextColor3 = Color3.fromRGB(255,0,0)
+        LegendaryEgg.TextColor3 = Color3.fromRGB(255,0,0)
+    end)
+end)
+
+spawn(function()
+    Cyborg.MouseButton1Click:Connect(function()
+        EmojiEgg.TextColor3 = Color3.fromRGB(255,0,0)
+        SuperEmojiEgg.TextColor3 = Color3.fromRGB(255,0,0)
+        AIEgg.TextColor3 = Color3.fromRGB(255,0,0)
+        CoolBois1.TextColor3 = Color3.fromRGB(255,0,0)
+        Cyborg.TextColor3 = Color3.fromRGB(0,255,0)
+        CoolBois2.TextColor3 = Color3.fromRGB(255,0,0)
+        PowerEgg.TextColor3 = Color3.fromRGB(255,0,0)
+        LegendaryEgg.TextColor3 = Color3.fromRGB(255,0,0)
+    end)
+end)
+
+spawn(function()
+    CoolBois2.MouseButton1Click:Connect(function()
+        EmojiEgg.TextColor3 = Color3.fromRGB(255,0,0)
+        SuperEmojiEgg.TextColor3 = Color3.fromRGB(255,0,0)
+        AIEgg.TextColor3 = Color3.fromRGB(255,0,0)
+        CoolBois1.TextColor3 = Color3.fromRGB(255,0,0)
+        Cyborg.TextColor3 = Color3.fromRGB(255,0,0)
+        CoolBois2.TextColor3 = Color3.fromRGB(0,255,0)
+        PowerEgg.TextColor3 = Color3.fromRGB(255,0,0)
+        LegendaryEgg.TextColor3 = Color3.fromRGB(255,0,0)
+    end)
+end)
+
+spawn(function()
+    PowerEgg.MouseButton1Click:Connect(function()
+        EmojiEgg.TextColor3 = Color3.fromRGB(255,0,0)
+        SuperEmojiEgg.TextColor3 = Color3.fromRGB(255,0,0)
+        AIEgg.TextColor3 = Color3.fromRGB(255,0,0)
+        CoolBois1.TextColor3 = Color3.fromRGB(255,0,0)
+        Cyborg.TextColor3 = Color3.fromRGB(255,0,0)
+        CoolBois2.TextColor3 = Color3.fromRGB(255,0,0)
+        PowerEgg.TextColor3 = Color3.fromRGB(0,255,0)
+        LegendaryEgg.TextColor3 = Color3.fromRGB(255,0,0)
+    end)
+end)
+
+spawn(function()
+    LegendaryEgg.MouseButton1Click:Connect(function()
+        EmojiEgg.TextColor3 = Color3.fromRGB(255,0,0)
+        SuperEmojiEgg.TextColor3 = Color3.fromRGB(255,0,0)
+        AIEgg.TextColor3 = Color3.fromRGB(255,0,0)
+        CoolBois1.TextColor3 = Color3.fromRGB(255,0,0)
+        Cyborg.TextColor3 = Color3.fromRGB(255,0,0)
+        CoolBois2.TextColor3 = Color3.fromRGB(255,0,0)
+        PowerEgg.TextColor3 = Color3.fromRGB(255,0,0)
+        LegendaryEgg.TextColor3 = Color3.fromRGB(0,255,0)
+    end)
+end)
+
+spawn(function()
+    DestroyUI.MouseButton1Click:Connect(function()
+        ScreenGui:Destroy()
+end)
+end)
+
+
+-- local A_1 = "Buy"
+-- local A_2 = "Phone"
+-- local A_3 = 2
+-- local Event = game:GetService("ReplicatedStorage").Events.GetItem
+-- Event:FireServer(A_1, 
